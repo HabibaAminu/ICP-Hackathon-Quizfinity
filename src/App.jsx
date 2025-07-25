@@ -1,10 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-
+import Web3Auth from './pages/Web3Auth';
 import Landing from './pages/Landing';
 import Home from './pages/Home';
-import Learn from './pages/Learn';
-import Quiz from './pages/Quiz';
-import Reward from './pages/Reward';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
 
@@ -15,12 +12,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          
-          <Route path="/learn" element={<Learn />} />
-          <Route path="/quiz" element={<Quiz />} />
-          <Route path="/reward" element={<Reward />} />
           <Route path="/login" element={<Login />} />
           <Route path="/landing" element={<Landing />} />
+          <Route path="/web3auth" element={<Web3Auth />} />
         </Routes>
       </div>
     </BrowserRouter>
